@@ -42,4 +42,4 @@ Spring Boot Generator 是一个基于Spring Boot & MyBatis Generator的项目，
 - 其他可以根据项目自身的业务需求自行扩展
 
 ## License
-Spring Boot Generator是在Apache 2.0许可下发布的完全开源软件. [Star](https://github.com/xuxinlong001/spring-boot-generator/stargazers)
+Spring Boot Generator是在Apache 2.0许可下发布的完全开源软件 [Star](https://github.com/xuxinlong001/spring-boot-generator/stargazers)
