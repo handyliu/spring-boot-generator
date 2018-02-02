@@ -7,26 +7,83 @@ import java.util.List;
 
 /**
  * Service 层 基础接口，其他Service 接口 请继承该接口
+ *
  * @author xuxinlong
  */
 public interface Service<T> {
-    void save(T model);//持久化
+    /**
+     * 插入数据
+     *
+     * @param model
+     */
+    void insert(T model);
 
-    void save(List<T> models);//批量持久化
+    /**
+     * 批量插入数据
+     *
+     * @param models
+     */
+    void insert(List<T> models);
 
-    void deleteById(Integer id);//通过主鍵刪除
+    /**
+     * 主键刪除
+     *
+     * @param id
+     */
+    void deleteById(Integer id);
 
-    void deleteByIds(String ids);//批量刪除 eg：ids -> “1,2,3,4”
+    /**
+     * 主键批量刪除
+     *
+     * @param ids ids -> “1,2,3,4”
+     */
+    void deleteByIds(String ids);
 
-    void update(T model);//更新
+    /**
+     * 更新数据
+     *
+     * @param model
+     */
+    void update(T model);
 
-    T findById(Integer id);//通过ID查找
+    /**
+     * 主键查询
+     *
+     * @param id
+     * @return
+     */
+    T findById(Integer id);
 
-    T findBy(String fieldName, Object value) throws TooManyResultsException; //通过Model中某个成员变量名称（非数据表中column的名称）查找,value需符合unique约束
+    /**
+     * 通过Model中某个成员变量名称（非数据表中column的名称）查找,value需符合unique约束
+     *
+     * @param fieldName
+     * @param value
+     * @return
+     * @throws TooManyResultsException
+     */
+    T findBy(String fieldName, Object value) throws TooManyResultsException;
 
-    List<T> findByIds(String ids);//通过多个ID查找//eg：ids -> “1,2,3,4”
+    /**
+     * 通过多个ID查找
+     *
+     * @param ids ids -> “1,2,3,4”
+     * @return
+     */
+    List<T> findByIds(String ids);
 
-    List<T> findByCondition(Condition condition);//根据条件查找
+    /**
+     * 根据条件查找
+     *
+     * @param condition
+     * @return
+     */
+    List<T> findByCondition(Condition condition);
 
-    List<T> findAll();//获取所有
+    /**
+     * 查询所有数据
+     *
+     * @return
+     */
+    List<T> findAll();
 }

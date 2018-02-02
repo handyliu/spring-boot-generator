@@ -29,12 +29,12 @@ public abstract class AbstractService<T> implements Service<T> {
     }
 
     @Override
-    public void save(T model) {
+    public void insert(T model) {
         mapper.insertSelective(model);
     }
 
     @Override
-    public void save(List<T> models) {
+    public void insert(List<T> models) {
         mapper.insertList(models);
     }
 
