@@ -6,7 +6,7 @@ package com.company.project.core;
  */
 public final class ProjectConstant {
     /**
-     * 项目基础包名称，根据自己公司的项目修改
+     * 项目基础包名称，根据自己的项目修改
      */
     public static final String BASE_PACKAGE = "com.company.project";
     /**
