@@ -143,6 +143,11 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
         }
     }
 
+    /**
+     * 返回json数据
+     * @param response
+     * @param result
+     */
     private void responseResult(HttpServletResponse response, Result result) {
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Content-type", "application/json;charset=UTF-8");
@@ -182,13 +187,19 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
         linkString = StringUtils.substring(linkString, 0, linkString.length() - 1);
 
         //密钥，自己修改
-        String secret = "Potato";
+        String secret = "xuxinlong";
         //混合密钥md5
         String sign = DigestUtils.md5Hex(linkString + secret);
         //比较
         return StringUtils.equals(sign, requestSign);
     }
 
+    /**
+     * 获取ip地址
+     *
+     * @param request
+     * @return
+     */
     private String getIpAddress(HttpServletRequest request) {
         String ip = request.getHeader("x-forwarded-for");
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
