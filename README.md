@@ -1,12 +1,12 @@
 ![Licence](https://img.shields.io/badge/licence-Apache%202-green.svg)
 [![GitHub Release](https://img.shields.io/github/release/xuxinlong001/spring-boot-generator.svg)](https://github.com/xuxinlong001/spring-boot-generator/releases)
 ## 简介
-Spring Boot Generator 是一个基于Spring Boot & MyBatis Generator的项目，用于快速构建中小型API、RESTful风格API项目，该项目已经有过多个真实项目的实践，稳定、简单、快速，使我们摆脱那些重复劳动，专注于业务代码的编写，减少加班。
+Spring Boot Generator 是一个基于Spring Boot & MyBatis Generator的项目，用于快速构建中小型API、RESTful风格API项目，该项目已经有过多个真实项目的实践，稳定、简单、快速，使我们摆脱那些重复劳动，专注于业务代码的编写。
 
 ## 特征&提供
-- 最佳实践的项目结构、配置文件、精简的POM
+- 最佳实践的项目结构、配置文件、精简的pom.xml
 - 统一响应结果封装及生成工具
-- 统一异常处理
+- 统一异常处理，接口返回异常json数据，页面统一跳转404、500页面
 - 简单的接口签名认证
 - 常用基础方法抽象封装
 - 使用Druid Spring Boot Starter 集成Druid数据库连接池与监控
@@ -30,7 +30,7 @@ Spring Boot Generator 是一个基于Spring Boot & MyBatis Generator的项目，
 - 建议业务失败直接使用```ServiceException("message")```抛出，由统一异常处理器来封装业务失败的响应结果，比如```throw new ServiceException("该手机号已被注册")```，会直接被封装为```{"code":400,"message":"该手机号已被注册"}```返回，无需自己处理，尽情抛出
 - 需要工具类的话建议先从```apache-commons-*```和```guava```中找，尽量精简项目
 - 开发规范建议遵循阿里巴巴Java开发手册（[最新版下载](https://files.cnblogs.com/files/han-1034683568/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%E7%BB%88%E6%9E%81%E7%89%88v1.3.0.pdf))
-- 建议在项目开发时使用[SpringFox-Swagger2](https://github.com/springfox/springfox)等开源项目来编写、管理API文档
+- 建议在项目开发时使用[SpringFox-Swagger2](https://github.com/springfox/springfox)、[RAP](https://github.com/thx/RAP)等开源项目来编写、管理API文档
  
 ## 技术选型&文档
 - Spring Boot（[查看Spring Boot学习&使用指南](http://blog.csdn.net/column/details/spring-boot.html)）

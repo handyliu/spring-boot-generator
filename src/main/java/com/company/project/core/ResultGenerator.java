@@ -5,7 +5,7 @@ package com.company.project.core;
  * @author xuxinlong
  */
 public class ResultGenerator {
-    private static final String DEFAULT_SUCCESS_MESSAGE = "SUCCESS";
+    private static final String DEFAULT_SUCCESS_MESSAGE = "success";
 
     public static Result genSuccessResult() {
         return new Result()
