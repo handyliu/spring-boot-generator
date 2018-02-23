@@ -1,4 +1,4 @@
-package com.company.project.core;
+package com.d6td.bbs.core;
 
 /**
  * 项目常量
@@ -8,7 +8,7 @@ public final class ProjectConstant {
     /**
      * 项目基础包名称，根据自己的项目修改
      */
-    public static final String BASE_PACKAGE = "com.company.project";
+    public static final String BASE_PACKAGE = "com.d6td.bbs";
     /**
      * Mapper所在包
      */

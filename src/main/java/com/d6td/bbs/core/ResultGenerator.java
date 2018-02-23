@@ -1,4 +1,4 @@
-package com.company.project.core;
+package com.d6td.bbs.core;
 
 /**
  * 响应结果生成工具

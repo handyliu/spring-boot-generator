@@ -1,4 +1,4 @@
-package com.company.project.configurer;
+package com.d6td.bbs.configurer;
 
 import com.github.pagehelper.PageHelper;
 import org.apache.ibatis.plugin.Interceptor;
@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-import static com.company.project.core.ProjectConstant.*;
+import static com.d6td.bbs.core.ProjectConstant.*;
 
 /**
  * Mybatis & Mapper & PageHelper 配置
@@ -31,7 +31,7 @@ public class MybatisConfigurer {
         SqlSessionFactoryBean factory = new SqlSessionFactoryBean();
         factory.setDataSource(dataSource);
         factory.setTypeAliasesPackage(MODEL_PACKAGE);
-        //配置分页插件，详情请查阅官方文档
+        //配置分页插件，详情请查阅PageHelper官方文档
         PageHelper pageHelper = new PageHelper();
         Properties properties = new Properties();
         //分页尺寸为0时查询所有纪录不再执行分页
