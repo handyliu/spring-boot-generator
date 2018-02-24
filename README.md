@@ -6,7 +6,7 @@ Spring Boot Generator 是一个基于Spring Boot & MyBatis Generator的项目，
 ## 特征&提供
 - 最佳实践的项目结构、配置文件、精简的pom.xml
 - 统一响应结果封装及生成工具
-- 统一异常处理，接口返回异常json数据，页面统一跳转404、500页面
+- 统一异常处理，接口返回异常json数据，错误页面统一跳转404、500页面
 - 简单的接口签名认证
 - 常用基础方法抽象封装
 - 使用Druid Spring Boot Starter 集成Druid数据库连接池与监控
