@@ -39,4 +39,5 @@ Spring Boot Generator 是一个基于Spring Boot & MyBatis Generator的项目，
 - MyBatis PageHelper分页插件（[查看官方中文文档](https://pagehelper.github.io/)）
 - Druid Spring Boot Starter（[查看官方中文文档](https://github.com/alibaba/druid/tree/master/druid-spring-boot-starter/)）
 - Fastjson（[查看官方中文文档](https://github.com/Alibaba/fastjson/wiki/%E9%A6%96%E9%A1%B5)）
+- FreeMarker（[查看官方中文文档](http://freemarker.foofun.cn/)）
 - 其他可以根据项目自身的业务需求自行扩展
