@@ -1,7 +1,6 @@
-package com.conpany.project;
+package com.d6td.bbs;
 
 
-import com.d6td.bbs.Application;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
