@@ -62,6 +62,8 @@
 
     <root level="INFO">
         <appender-ref ref="consoleLog"/>
+        <appender-ref ref="fileInfoLog"/>
+        <appender-ref ref="fileErrorLog"/>
     </root>
 
     <!-- 开发环境 -->
