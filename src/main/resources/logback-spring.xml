@@ -28,6 +28,8 @@
             <FileNamePattern>${logback.logDir}/info.${logback.name}.%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--只保留最近30天的日志-->
             <maxHistory>30</maxHistory>
+            <!--最大文件10MB-->
+            <maxFileSize>10MB</maxFileSize>
             <!--用来指定日志文件的上限大小，那么到了这个值，就会删除旧的日志-->
             <totalSizeCap>1GB</totalSizeCap>
         </rollingPolicy>
@@ -50,6 +52,8 @@
             <FileNamePattern>${logback.logDir}/error.${logback.name}.%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--只保留最近30天的日志-->
             <maxHistory>30</maxHistory>
+            <!--最大文件10MB-->
+            <maxFileSize>10MB</maxFileSize>
             <!--用来指定日志文件的上限大小，那么到了这个值，就会删除旧的日志-->
             <totalSizeCap>1GB</totalSizeCap>
         </rollingPolicy>
