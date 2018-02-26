@@ -9,7 +9,7 @@
 <body>
 <div style="text-align: center; padding: 11% 0;">
     <span style="font-size: 12rem; color: #393D50;">404</span>
-    <p style="font-size: 1.2rem; color: #999;">我勒个去，页面被外星人挟持了!</p>
+    <p style="font-size: 1.2rem; color: #999;">访问的页面被外星人挟持了!</p>
 </div>
 </body>
 </html>
