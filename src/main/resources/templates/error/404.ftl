@@ -1,11 +1,15 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
     <title>出错啦</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div style="text-align: center; padding:11% 0;">
-    <i style="line-height:20rem; font-size:20rem; color: #393D50; font-style: normal;">404</i>
-    <p style="font-size: 20px; font-weight: 300; color: #999;">我勒个去，页面被外星人挟持了!</p>
+<div style="text-align: center; padding: 11% 0;">
+    <span style="font-size: 12rem; color: #393D50;">404</span>
+    <p style="font-size: 1.2rem; color: #999;">我勒个去，页面被外星人挟持了!</p>
 </div>
 </body>
 </html>
