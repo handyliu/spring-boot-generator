@@ -13,7 +13,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -100,7 +99,7 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
                     }
                     responseResult(response, result);
                 } else {//普通视图
-                    if (response.getStatus() == HttpStatus.NOT_FOUND.value()) {
+                    if (response.getStatus() == ResultCode.NOT_FOUND.code()) {
                         mav.setViewName("error/404");
                     } else {
                         mav.setViewName("error/500");
