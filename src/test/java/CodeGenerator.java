@@ -11,12 +11,38 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static com.d6td.bbs.core.ProjectConstant.*;
-
 /**
  * 代码生成器，根据数据表名称生成对应的Model、Mapper、Service、Controller简化开发。
  */
 public class CodeGenerator {
+    /**
+     * 项目基础包名称，根据自己的项目修改
+     */
+    private static final String BASE_PACKAGE = "com.jbl.storage";
+    /**
+     * Mapper所在包
+     */
+    private static final String MAPPER_PACKAGE = BASE_PACKAGE + ".dao";
+    /**
+     * Model所在包
+     */
+    private static final String MODEL_PACKAGE = BASE_PACKAGE + ".model";
+    /**
+     * Service所在包
+     */
+    private static final String SERVICE_PACKAGE = BASE_PACKAGE + ".service";
+    /**
+     * Controller所在包
+     */
+    private static final String CONTROLLER_PACKAGE = BASE_PACKAGE + ".web";
+    /**
+     * ServiceImpl所在包
+     */
+    private static final String SERVICE_IMPL_PACKAGE = SERVICE_PACKAGE + ".impl";
+    /**
+     * Mapper插件基础接口的完全限定名
+     */
+    private static final String MAPPER_INTERFACE_REFERENCE = BASE_PACKAGE + ".core.Mapper";
     //JDBC配置，请修改为你项目的实际配置
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/test";
     private static final String JDBC_USERNAME = "root";

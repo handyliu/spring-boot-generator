@@ -2,3 +2,18 @@
 spring:
   profiles:
     active: dev
+
+mybatis:
+    type-aliases-package: com.jbl.storage.model
+    mapper-locations: classpath:mapper/*.xml
+
+mapper:
+    mappers: com.jbl.storage.core.Mapper
+    not-empty: false
+    identity: MYSQL
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
