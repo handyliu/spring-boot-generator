@@ -94,7 +94,7 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
                                 handlerMethod.getBean().getClass().getName(),
                                 handlerMethod.getMethod().getName(),
                                 e.getMessage());
-                        result.setCode(ResultCode.INTERNAL_SERVER_ERROR).setMessage("接口 [" + request.getRequestURI() + "] 内部错误");
+                        result.setCode(ResultCode.INTERNAL_SERVER_ERROR).setMessage("接口内部错误：" + e.getMessage());
                         logger.error(message, e);
                     }
                     responseResult(response, result);
