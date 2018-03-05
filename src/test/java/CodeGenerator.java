@@ -18,7 +18,7 @@ public class CodeGenerator {
     /**
      * 项目基础包名称，根据自己的项目修改
      */
-    private static final String BASE_PACKAGE = "com.jbl.storage";
+    private static final String BASE_PACKAGE = "com.d6td.bbs";
     /**
      * Mapper所在包
      */
@@ -44,7 +44,7 @@ public class CodeGenerator {
      */
     private static final String MAPPER_INTERFACE_REFERENCE = BASE_PACKAGE + ".core.Mapper";
     //JDBC配置，请修改为你项目的实际配置
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/test";
+    private static final String JDBC_URL = "jdbc:mysql://192.168.2.150:3306/common_ecp";
     private static final String JDBC_USERNAME = "root";
     private static final String JDBC_PASSWORD = "123456";
     private static final String JDBC_DIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
@@ -63,8 +63,8 @@ public class CodeGenerator {
     private static final String DATE = new SimpleDateFormat("yyyy/MM/dd").format(new Date());//@date
 
     public static void main(String[] args) {
-        genCode("输入表名", "输入表名", "输入表名");
-        //genCodeByCustomModelName("输入表名","输入自定义Model名称");
+//        genCode("输入表名", "输入表名", "输入表名");
+        genCodeByCustomModelName("ck_brand","Brand");
     }
 
     /**
