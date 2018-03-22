@@ -18,7 +18,7 @@ public class CodeGenerator {
     /**
      * 项目基础包名称，根据自己的项目修改
      */
-    private static final String BASE_PACKAGE = "com.d6td.bbs";
+    private static final String BASE_PACKAGE = "com.xuxinlong.generator";
     /**
      * Mapper所在包
      */

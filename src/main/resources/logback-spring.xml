@@ -69,7 +69,7 @@
     <!-- 开发环境 -->
     <springProfile name="dev">
         <!-- 控制台输出日志级别 -->
-        <logger name="com.d6td.bbs" level="DEBUG" additivity="false">
+        <logger name="com.xuxinlong.generator" level="DEBUG" additivity="false">
             <appender-ref ref="consoleLog"/>
             <appender-ref ref="fileInfoLog"/>
             <appender-ref ref="fileErrorLog"/>
@@ -79,7 +79,7 @@
     <!-- 测试环境+生产环境 多个使用逗号隔开 -->
     <springProfile name="test,prod">
         <!-- 控制台输出日志级别 -->
-        <logger name="com.d6td.bbs" level="INFO" additivity="false">
+        <logger name="com.xuxinlong.generator" level="INFO" additivity="false">
             <appender-ref ref="consoleLog"/>
             <appender-ref ref="fileInfoLog"/>
             <appender-ref ref="fileErrorLog"/>

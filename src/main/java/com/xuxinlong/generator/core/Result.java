@@ -1,4 +1,4 @@
-package com.d6td.bbs.core;
+package com.xuxinlong.generator.core;
 
 import com.alibaba.fastjson.JSON;
 

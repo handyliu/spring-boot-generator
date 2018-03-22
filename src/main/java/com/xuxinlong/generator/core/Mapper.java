@@ -1,4 +1,4 @@
-package com.d6td.bbs.core;
+package com.xuxinlong.generator.core;
 
 import tk.mybatis.mapper.common.BaseMapper;
 import tk.mybatis.mapper.common.ConditionMapper;

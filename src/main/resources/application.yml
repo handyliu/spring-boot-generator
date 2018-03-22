@@ -8,7 +8,7 @@ mybatis:
     mapper-locations: classpath:mapper/*.xml
 
 mapper:
-    mappers: com.jbl.storage.core.Mapper
+    mappers: com.xuxinlong.generator.core.Mapper
     not-empty: false
     identity: MYSQL
 

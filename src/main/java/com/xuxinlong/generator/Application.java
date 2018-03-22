@@ -1,4 +1,4 @@
-package com.d6td.bbs;
+package com.xuxinlong.generator;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package com.d6td.bbs.core;
+package com.xuxinlong.generator.core;
 
 /**
  * 响应码枚举，参考HTTP状态码的语义
